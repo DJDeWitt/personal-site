@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="640"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="dj_dewitt_symbol.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="432.09935"
+     inkscape:cy="274.60332"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="787"
+     inkscape:window-height="632"
+     inkscape:window-x="487"
+     inkscape:window-y="35"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-412.36218)">
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       d="m 320,1052.3622 c -176.73112,0 -320,-143.2689 -320,-320.00002 0,-176.73112 143.26888,-320 320,-320 176.73112,0 320,143.26888 320,320 0,176.73112 -143.26888,320.00002 -320,320.00002 z m 0,-40 c 154.63973,0 280,-125.36029 280,-280.00002 0,-154.63973 -125.36027,-280 -280,-280 -154.63973,0 -280,125.36027 -280,280 0,154.63973 125.36027,280.00002 280,280.00002 z"
+       id="path2987"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       d="M 320 160 L 320 180 C 397.31986 180 460 242.68014 460 320 C 460 397.31986 397.31986 460 320 460 L 320 480 C 408.36556 480 480 408.36556 480 320 C 480 231.63444 408.36556 160 320 160 z "
+       transform="translate(0,412.36218)"
+       id="path2998" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3022"
+       width="40"
+       height="600"
+       x="300"
+       y="20"
+       transform="translate(0,412.36218)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3024"
+       width="300"
+       height="20"
+       x="320"
+       y="672.36218" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1"
+       id="rect3028"
+       width="140"
+       height="20"
+       x="320"
+       y="772.36218" />
+  </g>
+</svg>

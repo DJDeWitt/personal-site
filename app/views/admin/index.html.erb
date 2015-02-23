@@ -1,0 +1,46 @@
+<h1>Admin Interface</h1>
+<p>Create, Edit, and Delete Posts and Projects.</p>
+
+<!-- POSTS  -->
+<h2>Posts</h2>
+<p>create <%= link_to 'new post', new_post_path %>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="2">Admin Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= link_to "#{post.title}", post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<!-- PROJECTS -->
+<h2>Projects</h2>
+<p>create <%= link_to 'new project', new_project_path %>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="2">Admin Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= link_to "#{project.name}", project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

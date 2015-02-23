@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h2>The Blog</h2>
+<p>I write about technology, media, and culture. I'm interested in exposing ignorance, finding nuance, and better understanding our crafted world.</p>
+
+<!-- Search Bar -->
+<% form_tag posts_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<!-- Actual Posts -->
+<table>
+  <% @posts.each do |post| %>
+    <tr>
+      <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", size: "400x300")), post %></figure></td>
+      <td class="post-index-textbox">
+        <h2 style="margin: 0px;"><%= link_to "#{post.title}", post %></h2>
+        <p><%= post.dek %></p>
+        <p><%= link_to 'Read now!', post %></p>
+        <p><%= post.created_at.to_date.strftime("%B %d, %Y") %></p>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= will_paginate @posts %>
+
+<br>

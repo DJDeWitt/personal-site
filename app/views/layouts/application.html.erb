@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DJ DeWitt</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:600' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+  <%= render 'layouts/header' %>
+</header>
+
+<div class='container'>
+  <table>
+    <tr>
+      <td class='left-sidebar', width="30%"><div><%= render 'layouts/left_sidebar' %></div></td>
+      <td class='main-column', width="60%"><%= yield %></td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+  <%= render 'layouts/footer' %>
+</footer>
+
+</body>
+</html>

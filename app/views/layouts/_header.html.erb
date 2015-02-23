@@ -1,0 +1,31 @@
+<div id='header'>
+
+<div id='header-left'>
+  <ul id="navlist">
+    <li id='nav-link'><div class="dj-home-class" onclick="djHomeClass()" style="width:16px; height:16px;"></div></li>
+    <li style="display: inline-block; float: left;" id='home-page-link'><%= link_to "DJ DeWitt", root_path, {style: "text-align:center; vertical-align:middle; font-size: 32px;"} %></li>
+  </ul>
+
+  <!-- <div id="navcontainer"> -->
+  <ul id="navlist">
+    <li id='nav-link'><%= link_to "Blog", '/posts' %></li>
+    <li id='nav-link'><%= link_to "Projects", '/projects' %></li>
+    <li id='nav-link'><%= link_to "Contact", '/contact' %></li>
+  </ul>
+  <!-- </div> -->
+</div>
+
+<div id="header-social">
+  <div id="navcontainer">
+  <ul id="navlist" style="padding-right: 40px; padding-top: 10px;">
+    <li style="margin: 0px;"><div class="twitter-class" onclick="socialTwitter()" style="width:16px; height:16px;"></div></li>
+    <li style="margin: 0px;"><div class="linkedin-class" onclick="socialLinkedIn()" style="width:16px; height:16px;"></div></li>
+    <li style="margin: 0px;"><div class="github-class" onclick="socialGitHub()" style="width:16px; height:16px;"></div></li>
+    <li style="margin: 0px;"><div class="mail-class" onclick="socialMail()" style="width:16px; height:16px;"></div></li>
+  </ul>
+</div>
+</div>
+
+
+
+</div>

@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+
+<h2 style="color: #3333CC;"><%= @project.name %> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@project.created_at.to_date.strftime("%B %d, %Y")}" %></span></h2>
+<p><em><%= @project.description %></em></p>
+<div style="border-bottom: 1px solid black;"></div>
+
+<p style="text-align:center"><%= image_tag "#{@project.image}", size: "800x600" %></p>
+<p><%= @project.body.html_safe %></p>
+<br>
+<p><strong>Thank you for reading. If you enjoyed the article, please consider sharing it with your friends. If you didn't enjoy the article, please consider sharing it with your enemies.</strong></p>
