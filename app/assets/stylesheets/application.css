@@ -21,7 +21,8 @@ html, body {
   background-color: GhostWhite;
   height: 100%;
   overflow: scroll;
-  background-image: url("chicago_skyline.JPG");
+  /*background-image: url("chicago_skyline.JPG");*/
+  background-color: gray;
   font-family: 'PT Sans', sans-serif;
 }
 

@@ -62602,3 +62602,795 @@ Started GET "/assets/application-b223bb287b4de91d337bcdbcf8b3b91a.js?body=1" for
 
 
 Started GET "/assets/DJ_profile-22be48b47fa602cdb1516840f3ff6da9.jpg" for ::1 at 2015-02-22 20:52:11 -0600
+
+
+Started GET "/contact" for ::1 at 2015-02-23 20:58:24 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_left_sidebar.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 305ms (Views: 295.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/chicago_skyline.JPG" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/dj_dewitt_symbol_white.svg" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/twitter_button.svg" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/linkedin_button.svg" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/mail_button.svg" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/assets/github_button.svg" for ::1 at 2015-02-23 20:58:25 -0600
+
+
+Started GET "/images/dj_dewitt_symbol_ico.ico" for ::1 at 2015-02-23 20:58:25 -0600
+Processing by ImagesController#show as 
+  Parameters: {"id"=>"dj_dewitt_symbol_ico"}
+  [1m[35mImage Load (2.1ms)[0m  SELECT  "images".* FROM "images" WHERE "images"."id" = $1 LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 18ms
+
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=dj_dewitt_symbol_ico):
+  app/controllers/images_controller.rb:67:in `set_image'
+
+
+  Rendered /Users/DJDeWitt/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/DJDeWitt/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/DJDeWitt/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/DJDeWitt/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/DJDeWitt/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 20:58:28 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.7ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (38.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_left_sidebar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 200ms (Views: 172.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/dj_dewitt_symbol_hover.svg" for ::1 at 2015-02-23 20:59:34 -0600
+
+
+Started GET "/" for ::1 at 2015-02-23 20:59:34 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 119.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 21:00:22 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 178ms (Views: 175.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/chicago_skyline.JPG" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/linkedin_button.svg" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/twitter_button.svg" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/dj_dewitt_symbol_white.svg" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/github_button.svg" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/assets/mail_button.svg" for ::1 at 2015-02-23 21:00:23 -0600
+
+
+Started GET "/" for ::1 at 2015-02-23 21:00:37 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-23 21:00:38 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 188ms (Views: 185.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 21:00:42 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 123.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for ::1 at 2015-02-23 21:00:43 -0600
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 21:00:47 -0600
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" LIMIT 3[0m
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 163ms (Views: 161.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter_button_hover.svg" for ::1 at 2015-02-23 21:00:50 -0600
+
+
+Started GET "/assets/linkedin_button_hover.svg" for ::1 at 2015-02-23 21:00:51 -0600
+
+
+Started GET "/assets/github_button_hover.svg" for ::1 at 2015-02-23 21:00:51 -0600
+
+
+Started GET "/assets/mail_button_hover.svg" for ::1 at 2015-02-23 21:00:51 -0600
+
+
+Started GET "/posts" for ::1 at 2015-02-23 21:00:55 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 21:02:35 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 111.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-02-23 21:02:36 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 157.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-23 21:02:36 -0600
+
+
+Started GET "/assets/dj_dewitt_symbol_hover.svg" for ::1 at 2015-02-26 15:12:24 -0600
+
+
+Started GET "/projects" for ::1 at 2015-02-26 15:12:27 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 122ms (Views: 121.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-26 15:12:28 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 156.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for ::1 at 2015-02-26 15:12:34 -0600
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 120.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2015-02-26 15:12:44 -0600
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-26 15:12:45 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 155.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contact" for ::1 at 2015-02-26 15:12:46 -0600
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 125ms (Views: 124.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-26 15:23:32 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 129.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-26 15:25:11 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 116.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects" for ::1 at 2015-02-26 15:25:17 -0600
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"
+  Rendered projects/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-02-26 15:25:17 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 112.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for ::1 at 2015-02-26 15:25:21 -0600
+Processing by WelcomeController#contact as HTML
+  Rendered welcome/contact.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-26 15:55:02 -0600
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2015-02-26 15:56:30 -0600
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 162ms (Views: 160.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/chicago_skyline.JPG" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/linkedin_button.svg" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/github_button.svg" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/dj_dewitt_symbol_white.svg" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/twitter_button.svg" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/assets/mail_button.svg" for ::1 at 2015-02-26 15:56:31 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:10 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 126.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/dj_dewitt_symbol_hover.svg" for ::1 at 2015-02-26 15:58:36 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:37 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 178ms (Views: 175.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:37 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:40 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 152ms (Views: 149.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:40 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:42 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 110.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:42 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:50 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 148.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:51 -0600
+
+
+Started GET "/" for ::1 at 2015-02-26 15:58:52 -0600
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%%')  ORDER BY created_at DESC LIMIT 3 OFFSET 0[0m
+  [1m[35mProject Load (0.1ms)[0m  SELECT  "projects".* FROM "projects" LIMIT 3
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_left_sidebar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/picks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/projects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/images-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/images-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/picks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/projects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-26 15:58:52 -0600
