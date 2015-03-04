@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'carrierwave'
 gem 'cloudinary'
 
+# Allows pagination for blog index and project index
 gem 'will_paginate', '~> 3.0.6'
 
 # creates inline_svg() rails tag
@@ -37,6 +38,11 @@ gem 'inline_svg'
 
 # Creating slugs using friendly IDs
 gem "friendly_id", "~> 5.0.1"
+
+# Enables responsiveness through Semantic.UI
+gem 'semantic-ui-rails'
+gem "therubyracer"
+gem "less-rails"
 
 # Use Unicorn as the app server
 # gem 'unicorn'

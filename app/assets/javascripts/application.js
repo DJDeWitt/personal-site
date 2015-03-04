@@ -40,5 +40,15 @@ function socialGitHub() {
 }
 
 function socialMail() {
-    window.location.href = 'mailto:name@email.com';
+    window.location.href = 'mailto:djdewitt@gmail.com';
 }
+
+// MOBILE NAVBAR
+$(document).ready(function(){
+  $('.right.menu.open').on("click",function(e){
+        e.preventDefault();
+    $('.ui.vertical.menu').toggle();
+  });
+
+  $('.ui.dropdown').dropdown();
+});
