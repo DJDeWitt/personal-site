@@ -15,10 +15,10 @@
   <% #render 'layouts/header' %>
 <!-- </header> -->
 
-<div class="ui page grid">
+<div class="ui stackable grid" style="margin-top:0px; top: 0px;">
 
 <!-- Header (Computer and Tablet) -->
-<div class="computer tablet only row" style="margin-top:0px;">
+<div class="computer tablet only row" style="margin-top:0px; top: 0px;">
   <div class="ui purple fixed menu navbar page grid">
 
     <a href class="item" style="margin: 0px; padding: 0px;"><div class="dj-home-class" onclick="djHomeClass()" style="width:32px; height:32px; padding: 0px;"></div></a>
@@ -42,7 +42,7 @@
   </div>
 </div>
 <!-- Header (Mobile) -->
-<div class="mobile only row" style="margin:0px;padding:0px;">
+<div class="mobile only row" style="margin-top:0px;padding:0px;">
   <div class="ui purple fixed menu navbar page grid">
     <a href="/" class="brand item"><span style="color:white;">DJ DeWitt</span></a>
     <div class="right menu open">
@@ -68,18 +68,23 @@
   </div>
 </div>
 
+<!-- <div class="computer tablet only row" style="margin-top:0px;"> -->
+  <!-- <div class="ui purple fixed menu navbar page grid"> -->
+
 <!-- <div class="ui stackable vertically padded grid"> -->
-    <div class="centered four column row" style="margin-top: 0px;">
-      <div class="white-box three wide centered column"><%= render 'layouts/left_sidebar' %></div>
-      <div class="white-box eleven wide centered column"><%= yield %></div>
-    </div>
+<div class="four column row" style="margin-top:00px;">
+  <div class="white-box three wide centered column padding-reset"><%= render 'layouts/left_sidebar' %></div>
+  <div class="white-box eleven wide centered column padding-reset"><%= yield %></div>
+</div>
 <!-- </div> -->
-
-
 
 <!-- Footer -->
 <footer>
-  <%= render 'layouts/footer' %>
+<div class="row">
+  <div class="column">
+    <%= render 'layouts/footer' %>
+  </div>
+</div>
 </footer>
 
 </div>
