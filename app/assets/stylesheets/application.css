@@ -407,27 +407,9 @@ margin: 10px;
   cursor: pointer;
 }
 
-.tint:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  bottom: 5px;
-  left: 0px;
-  right: 0px;
-  background: none;
-    -moz-transition: all .05s linear;
-    -webkit-transition: all .05s linear;
-    -ms-transition: all .05s linear;
-    -o-transition: all .05s linear;
-    transition: all .05s linear;
-  }
-
-  .tint:hover:before {
-
-    background: rgba(51,51,204, 0.5);
-  }
-
+.tint a:hover{
+  background-color: #FFFFFF;
+}
 
 /* Semantic UI CSS - Header */
 

@@ -22,7 +22,7 @@
   <% #render 'layouts/header' %>
 <!-- </header> -->
 
-<div class="ui stackable grid" style="margin-top:0px; top: 0px;">
+<div class="ui grid" style="margin-top:0px; top: 0px;">
 
 <!-- Header (Computer and Tablet) -->
 <div class="computer tablet only row" style="margin-top:0px; top: 0px;">
@@ -60,6 +60,7 @@
     </div>
   </div>
   <div class="ui vertical navbar menu">
+    <a href="/" class="item"><span>Home</span></a>
     <a href="/posts" class="item"><span>Blog</span></a>
     <a href="/projects" class="item"><span>Projects</span></a>
     <a href="/contact" class="item"><span>Contact</span></a>
@@ -79,11 +80,15 @@
   <!-- <div class="ui purple fixed menu navbar page grid"> -->
 
 <!-- <div class="ui stackable vertically padded grid"> -->
-<div class="computer tablet only four column row" style="margin-top:00px;">
+<div class="four column computer tablet only row" style="margin-top:0px;">
   <div class="white-box three wide centered column padding-reset"><%= render 'layouts/left_sidebar' %></div>
   <div class="white-box eleven wide centered column padding-reset"><%= yield %></div>
 </div>
 <!-- </div> -->
+
+<div class="four column mobile only row" style="margin-top:0px;">
+  <div class="white-box eleven wide centered column padding-reset"><%= yield %></div>
+</div>
 
 <!-- Footer -->
 <footer>
