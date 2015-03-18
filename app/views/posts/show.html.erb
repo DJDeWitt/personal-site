@@ -8,4 +8,4 @@
 <p style="text-align:center"><%= image_tag "#{@post.image}", size: "800x600" %></p>
 <p><%= @post.body.html_safe %></p>
 <br>
-<p><strong>Thank you for reading. If you enjoyed the article, please consider sharing it with your friends. If you didn't enjoy the article, please consider sharing it with your enemies.</strong></p>
+<p><strong>Thank you for reading. If you enjoyed the article, please consider sharing it with your friends. If you didn't enjoy the article, please consider sharing it with your enemies. If you want something else to read, <%= link_to "click here", post_path(@random_post) %>.</strong></p>

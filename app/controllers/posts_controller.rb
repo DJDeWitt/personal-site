@@ -10,6 +10,16 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+
+    post_array = Post.all
+    post_number = rand(Post.all.size)
+    @random_post = post_array[post_number]
+
+    until @random_post != @post
+      post_number = rand(Post.all.size)
+      @random_post = post_array[post_number]
+    end
+
     if request.path != post_path(@post)
       redirect_to @post, status: :moved_permanently
     end

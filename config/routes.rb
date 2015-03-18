@@ -1,11 +1,30 @@
 Rails.application.routes.draw do
+  devise_for :users#, :skip => [:registrations]
+  # as :user do
+  #     get "/admin/login" => "devise/sessions#new", :as => :new_user_session
+  #     post "/admin/login" => "devise/sessions#create", :as => :user_session
+  # end
+
+  devise_for :users, :skip => [:registrations, :sessions] do
+    # devise/registrations
+    # get 'signup' => 'devise/registrations#new', :as => :new_user_registration
+    # post 'signup' => 'devise/registrations#create', :as => :user_registration
+    # get 'users/cancel' => 'devise/registrations#cancel', :as => :cancel_user_registration
+    # get 'users/edit' => 'devise/registrations#edit', :as => :edit_user_registration
+    # put 'users' => 'devise/registrations#update'
+    # delete 'users/cancel' => 'devise/registrations#destroy'
+    # devise/sessions
+    get 'signin' => 'devise/sessions#new', :as => :new_user_session
+    post 'signin' => 'devise/sessions#create', :as => :user_session
+    get 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
+
   resources :picks
 
   resources :images
 
   resources :projects
-
-  resources :users
 
   resources :posts
 
@@ -15,9 +34,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get '/login' => 'sessions#new'
-  post '/login' => 'sessions#create'
-  get '/logout' => 'sessions#destroy'
+  # get '/login' => 'sessions#new'
+  # post '/login' => 'sessions#create'
+  # get '/logout' => 'sessions#destroy'
 
   get '/landing' => 'welcome#index'
   get '/contact' => 'welcome#contact'

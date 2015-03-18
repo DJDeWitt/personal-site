@@ -1,4 +1,16 @@
 <h1>Admin Interface</h1>
+
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+   |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+
+
+<% if current_user %>
 <p>Create, Edit, and Delete Posts and Projects.</p>
 
 <!-- POSTS  -->
@@ -44,3 +56,9 @@
     <% end %>
   </tbody>
 </table>
+
+<% else %>
+
+<p>Sorry, you don't belong here :) Why don't you go read some <%= link_to "blog posts", "/posts" %> or check out my <%= link_to "latest projects", "/projects" %>?</p>
+
+<% end %>
