@@ -15,9 +15,12 @@ class PostsController < ApplicationController
     post_number = rand(Post.all.size)
     @random_post = post_array[post_number]
 
-    until @random_post != @post
-      post_number = rand(Post.all.size)
-      @random_post = post_array[post_number]
+    # this was screwed up without the if, maybe now fixed
+    if (Post.all.size > 1)
+      until @random_post != @post
+        post_number = rand(Post.all.size)
+        @random_post = post_array[post_number]
+      end
     end
 
     if request.path != post_path(@post)
