@@ -1,43 +1,52 @@
-<table>
-  <tr>
-    <td colspan="2">
-      <h1>Hi there, I'm DJ.</h1>
-      <p>I'm a web developer looking for a company that is passionate about creative, self-motivated individuals that want to do great work while making the tech industry a more diverse, empathetic place.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" style="vertical-align: top;">
-      <h2>Latest Posts</h2>
-      <table>
-        <% @posts.each do |post| %>
-        <tr>
-        <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", size: "128x96")), post %></figure></td>
-        <td class="post-index-textbox">
+
+<div>
+  <h1>Hi there, I'm DJ.</h1>
+  <p>I'm a web developer looking for a company that is passionate about creative, self-motivated individuals that want to do great work while making the tech industry a more diverse, empathetic place.</p>
+</div>
+
+<div>
+  <div style="vertical-align: top; display: inline-block; width: 48%;">
+
+    <h2>Latest Posts</h2>
+
+    <table>
+      <% @posts.each do |post| %>
+
+        <tr><td class="post-index-textbox">
+          <figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", width: "100%")), post %></figure></td>
+        </tr>
+
+        <tr><td class="post-index-textbox">
           <strong><%= link_to post.title, post %></strong> <span style="font-size: .75em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></span>
           <div style="font-size: .75em;"><%= post.dek %></div></td>
         </tr>
-        <% end %>
-      </table>
-      <p>For more posts, please visit <%= link_to "the blog.", '/posts' %></p>
-    </td>
-    <td width="50%" style="vertical-align: top;">
-      <h2>Latest Projects</h2>
-      <table>
-        <% @projects.each do |project| %>
-        <tr>
-        <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", size: "128x96")), project %></figure></td>
-        <td class="post-index-textbox">
-          <strong><%= link_to project.name, project %></strong> <span style="font-size: .75em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
-          <div style="font-size: .75em;"><%= project.description %></div></td>
-        </tr>
-        <% end %>
-      </table>
-      <p>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></p>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <p>I am currently looking for full-time junior developer opportunities. If you are interested in bringing on a creative voice that cares deeply about improving tech and tech culture, <%= link_to "let's talk.", '/contact' %></p>
-    </td>
-  </tr>
-</table>
+
+      <% end %>
+    </table>
+    <p>For more posts, please visit <%= link_to "the blog.", '/posts' %></p>
+  </div>
+
+
+  <div style="vertical-align: top; display: inline-block;  width: 48%;">
+
+    <h2>Latest Projects</h2>
+
+    <table>
+      <% @projects.each do |project| %>
+
+
+      <tr><td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", width: "100%")), project %></figure></td></tr>
+
+      <tr><td class="post-index-textbox">
+        <strong><%= link_to project.name, project %></strong> <span style="font-size: .75em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
+        <div style="font-size: .75em;"><%= project.description %></div></td></tr>
+
+      <% end %>
+    </table>
+    <p>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></p>
+  </div>
+</div>
+
+<div>
+  <p>I am currently looking for full-time junior developer opportunities. If you are interested in bringing on a creative voice that cares deeply about improving tech and tech culture, <%= link_to "let's talk.", '/contact' %></p>
+</div>
