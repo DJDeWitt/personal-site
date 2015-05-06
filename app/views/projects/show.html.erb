@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 
-<h2 style="color: #3333CC;"><%= @project.name %> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@project.created_at.to_date.strftime("%B %d, %Y")}" %></span></h2>
-<p><em><%= @project.description %></em></p>
-<div style="border-bottom: 1px solid black;"></div>
+<h1 style="color: #3333CC;"><strong><%= @project.name %></strong> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@project.created_at.to_date.strftime("%B %d, %Y")}" %></span></h1>
+<h2><%= @project.description %></h2>
 
 <p style="text-align:center"><%= image_tag "#{@project.image}", width: "100%" %></p>
 <p><%= @project.body.html_safe %></p>

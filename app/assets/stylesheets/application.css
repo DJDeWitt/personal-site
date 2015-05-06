@@ -40,11 +40,15 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
-  background-color: GhostWhite;
+  background-color: White;
   height: 100%;
   overflow: scroll;
   /*background-image: url("chicago_skyline.JPG");*/
   font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -61,7 +65,9 @@ a:hover {
 blockquote {
   border-left: 6px solid #3333CC;
   padding-left: 4px;
-  color: #565656;
+  color: #333;
+  background-color: GhostWhite;
+  font-size: 1.25em;
 }
 
 .container {

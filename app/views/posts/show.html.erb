@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 
-<h2 style="color: #3333CC;"><%= @post.title %> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@post.created_at.to_date.strftime("%B %d, %Y")}" %></span></h2>
-<p><em><%= @post.dek %></em></p>
-<div style="border-bottom: 1px solid black;"></div>
+<h1 style="color: #3333CC;"><strong><%= @post.title %></strong> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@post.created_at.to_date.strftime("%B %d, %Y")}" %></span></h1>
+<h2><%= @post.dek %></h2>
 
 <p style="text-align:center"><%= image_tag "#{@post.image}", width: "100%" %></p>
 <p><%= @post.body.html_safe %></p>
