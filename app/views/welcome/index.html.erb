@@ -1,13 +1,15 @@
 
 <div>
   <h1 style="color: #3333CC;">Hi there, I'm DJ.</h1>
-  <h2>I'm a web developer looking for a company that is passionate about creative, self-motivated individuals that want to do great work while making the tech industry a more diverse, empathetic place.</h2>
+  <h2>I'm a <a href="/projects">web developer</a> looking for a company that is passionate about creative, self-motivated individuals.
+  <br><br>
+  I want to do great work while making the tech industry a more diverse, empathetic place.</h2>
 </div>
 
 <div>
   <div style="vertical-align: top; display: inline-block; width: 48%;">
 
-    <h2>Latest Posts</h2>
+    <h1 style="color: #3333CC;">Latest Posts</h1>
 
     <table>
       <% @posts.each do |post| %>
@@ -16,20 +18,23 @@
           <figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", width: "100%")), post %></figure></td>
         </tr>
 
-        <tr><td class="post-index-textbox">
-          <strong><%= link_to post.title, post %></strong> <span style="font-size: .75em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></span>
-          <div style="font-size: .75em;"><%= post.dek %></div></td>
+        <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
+          <strong style="font-size: 2em;"><%= link_to post.title, post %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></span>
+          <div style="font-size: 1.25em;"><%= post.dek %></div></td>
         </tr>
 
       <% end %>
     </table>
-    <p>For more posts, please visit <%= link_to "the blog.", '/posts' %></p>
+    <table><tr>
+      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
+      <td><h3>For more posts, please visit <%= link_to "the blog.", '/posts' %></h3></td>
+    </tr></table>
   </div>
 
 
   <div style="vertical-align: top; display: inline-block;  width: 48%;">
 
-    <h2>Latest Projects</h2>
+    <h1 style="color: #3333CC;">Latest Projects</h1>
 
     <table>
       <% @projects.each do |project| %>
@@ -37,16 +42,19 @@
 
       <tr><td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", width: "100%")), project %></figure></td></tr>
 
-      <tr><td class="post-index-textbox">
-        <strong><%= link_to project.name, project %></strong> <span style="font-size: .75em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
-        <div style="font-size: .75em;"><%= project.description %></div></td></tr>
+      <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
+        <strong style="font-size: 2em;"><%= link_to project.name, project %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
+        <div style="font-size: 1.25em;"><%= project.description %></div></td></tr>
 
       <% end %>
     </table>
-    <p>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></p>
+    <table><tr>
+      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
+      <td><h3>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></h3></td>
+    </tr></table>
   </div>
 </div>
 
 <div>
-  <p>I am currently looking for full-time junior developer opportunities. If you are interested in bringing on a creative voice that cares deeply about improving tech and tech culture, <%= link_to "let's talk.", '/contact' %></p>
+  <h2>I am currently looking for full-time junior developer opportunities. If you are interested in bringing on a creative voice that cares deeply about improving tech and tech culture, <%= link_to "let's talk.", '/contact' %></h2>
 </div>
