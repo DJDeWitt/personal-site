@@ -13,11 +13,21 @@
     <!-- Right Menu (Search, Social Icons) -->
     <div class="right menu">
       <div class="item">
-        <div class="ui icon input">
-          <input type="text" placeholder="Search...">
-          <i class="search icon"></i>
-        </div>
+        <!-- <div class="ui icon input"> -->
+          <%= form_tag("/search", method: "get", id: "search_form") do %>
+            <%= text_field_tag(:q, nil, class: 'search-field') %>
+            <button type="submit" form="search_form" class='search-field-button'><i class="search icon" style="font-size: 2em; opacity: 1;"></i></button>
+          <% end %>
+        <!-- </div> -->
       </div>
+
+      <% form_tag projects_path, :method => 'get' do %>
+        <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+        </p>
+      <% end %>
+      <!-- Social Icons -->
       <a href class="item" style="margin: 0px; padding: 0px;"><div class="twitter-class" onclick="socialTwitter()" style="width:32px; height:32px; padding:0px;"></div></a>
       <a href class="item" style="margin: 0px; padding: 0px;"><div class="linkedin-class" onclick="socialLinkedIn()" style="width:32px; height:32px; padding:0px;"></div></a>
       <a href class="item" style="margin: 0px; padding: 0px;"><div class="github-class" onclick="socialGitHub()" style="width:32px; height:32px; padding:0px;"></div></a>

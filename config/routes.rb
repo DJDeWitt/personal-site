@@ -41,6 +41,7 @@ Rails.application.routes.draw do
   get '/landing' => 'welcome#index'
   get '/contact' => 'welcome#contact'
   get '/manifesto' => 'welcome#manifesto'
+  get '/search' => 'welcome#search'
 
   get '/admin' => 'admin#index'
 

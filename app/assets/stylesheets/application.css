@@ -62,12 +62,53 @@ a:hover {
   color: white;
 }
 
+.search-field {
+  border: 0px;
+  border-radius: 20px;
+  font-size: 1.25em;
+  padding: 2px;
+}
+
+.search-field-button {
+  color: #3333CC;
+  background-color: white;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.search-field-button:hover {
+  color: white;
+  background-color: #262699;
+}
+
 blockquote {
   border-left: 6px solid #3333CC;
   padding-left: 4px;
   color: #333;
   background-color: GhostWhite;
   font-size: 1.25em;
+}
+
+.pullquote-float-right {
+  display: block;
+  float: right;
+  font-weight: bold;
+  font-style: italic;
+  color: #3333CC;
+  font-size: 2em;
+  text-align:center;
+  width: 50%;
+}
+
+.pullquote-float-left {
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-style: italic;
+  color: #3333CC;
+  font-size: 2em;
+  text-align:center;
+  width: 50%;
 }
 
 ol {
