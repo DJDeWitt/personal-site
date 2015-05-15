@@ -81,6 +81,18 @@ a:hover {
   background-color: #262699;
 }
 
+#newsletter-subscribe-button {
+  background-color: #3333CC;
+  color: white;
+  font-size: 1.5em;
+  border: 0px;
+  border-radius: 5px;
+}
+#newsletter-subscribe-button:hover {
+  background-color: #262699;
+  color: white;
+}
+
 blockquote {
   border-left: 6px solid #3333CC;
   padding-left: 4px;

@@ -15,7 +15,7 @@
       <div class="item">
         <!-- <div class="ui icon input"> -->
           <%= form_tag("/search", method: "get", id: "search_form") do %>
-            <%= text_field_tag(:q, nil, class: 'search-field') %>
+            <%= text_field_tag(:q, nil, placeholder: 'search site', class: 'search-field') %>
             <button type="submit" form="search_form" class='search-field-button'><i class="search icon" style="font-size: 2em; opacity: 1;"></i></button>
           <% end %>
         <!-- </div> -->
