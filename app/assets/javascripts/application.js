@@ -52,3 +52,43 @@ $(document).ready(function(){
 
   $('.ui.dropdown').dropdown();
 });
+
+// CMS Tabbing
+$(document).ready(function() {
+
+  $("#viewPreview").hide();
+
+  $("#buttonHTML").click(function( event ) {
+    event.preventDefault();
+    // Get text from HTML
+    var text = $('.mytextarea').val();
+    $("#viewHTML").show();
+    $("#viewPreview").hide();
+
+    // Replace Post Body
+    var text_area_value = $("#post_body").val();
+    $("div.demo-container").html(text_area_value);
+  });
+
+  $("#buttonPreview").click(function( event ) {
+    event.preventDefault();
+    // Get text from HTML
+    var text = $('.mytextarea').val();
+    $("#viewHTML").hide();
+    $("#viewPreview").show();
+
+    // Replace Post Title
+    var text_area_value = $("#post_title").val();
+    $("span.title-container").html(text_area_value);
+    // Replace Post Dek
+    var text_area_value = $("#post_dek").val();
+    $("span.dek-container").html(text_area_value);
+    // Replace Image Src
+    var text_area_value = $("#post_image").val();
+    $("img.image_container").attr("src",text_area_value);
+    // Replace Post Body
+    var text_area_value = $("#post_body").val();
+    $("div.body-container").html(text_area_value);
+  });
+
+});

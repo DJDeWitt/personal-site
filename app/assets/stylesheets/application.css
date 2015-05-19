@@ -527,4 +527,13 @@ margin: 10px;
 
 
 
-
+/* CMS tabbing */
+#mainView {
+    border: 1px solid black;
+  clear: both;
+  padding: 0 1em;
+}
+.active {
+    background-color: #FFF;
+    color: #000;
+}
