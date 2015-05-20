@@ -11,6 +11,8 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
 
+    redirect_to root_url if @post.published == false
+
     post_array = Post.all
     post_number = rand(Post.all.size)
     @random_post = post_array[post_number]
@@ -105,6 +107,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :dek, :body, :image)
+      params.require(:post).permit(:title, :dek, :body, :published, :image)
     end
 end

@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
     # paginate :per_page => 5, :page => page,
     #          :conditions => ['title like ?', "%#{search}%"],
     #          :order => 'title'
-    order('created_at DESC').where('title LIKE ?', "%#{search}%").paginate(page: page, per_page: 8)
+    order('created_at DESC').where('title LIKE ? AND published=?', "%#{search}%", true).paginate(page: page, per_page: 8)
   end
 
 

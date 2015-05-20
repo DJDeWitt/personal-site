@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
 
     search_array.each do |sa_item|
       Post.all.each do |post|
-        if post.title.downcase.include? sa_item.downcase
+        if ( post.title.downcase.include? sa_item.downcase and post.published == true)
           @searched_posts << post
         end
       end
