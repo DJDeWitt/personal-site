@@ -1,0 +1,58 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <button id="buttonHTML" ng-click="current_tab = 1">HTML</button>
+  <button id="buttonPreview" ng-click="current_tab = 2">Preview</button>
+
+  <!-- HTML -->
+  <div id="viewHTML">
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_area :name, cols: 120, rows: 2 %>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_area :description, cols: 120, rows: 5 %>
+    </div>
+    <div class="field">
+      <%= f.label :body %><br>
+      <%= f.text_area :body, cols: 120, rows: 20, "class"=>"mytextarea" %>
+    </div>
+    <div class="field">
+      <%= f.label :image %><br>
+      <%= f.text_area :image, cols: 120, rows: 1 %>
+    </div>
+    <div class="field">
+      <%= f.label :published %><br>
+      <%= f.check_box :published %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+  <!-- Preview -->
+  <div id="viewPreview">
+
+    <h1 style="color: #3333CC;"><strong><span class="title-container"></span></strong></h1>
+    <h2><span class="dek-container"></span></h2>
+
+    <img class="image_container" src="image.jpg" width="100%"/>
+
+    <!-- <p style="text-align:center"></p> -->
+
+    <div class="body-container">
+      <div class="demo-box">Demonstration Box</div>
+    </div>
+  </div>
+
+<% end %>

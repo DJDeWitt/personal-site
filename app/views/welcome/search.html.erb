@@ -1,6 +1,6 @@
 <h1 style="color: #3333CC;">Site Search</h1>
 
-<h3><%= @searched_posts.count %> posts and <%= @searched_projects.count %> projects found, listed below.</h3>
+<h3><%= @searched_posts.count %> posts, <%= @searched_projects.count %> projects, and <%= @searched_games.count %> games found, listed below.</h3>
 
 <h2><%= @searched_posts.count %> posts found</h2>
 <!-- Actual Posts -->
@@ -29,6 +29,22 @@
         <p><%= project.description %></p>
         <p><%= link_to 'Check it out!', project %></p>
         <p><%= project.created_at.to_date.strftime("%B %d, %Y") %></p>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<h2><%= @searched_games.count %> games found</h2>
+<!-- Actual Games -->
+<table>
+  <% @searched_games.each do |game| %>
+    <tr>
+      <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{game_path()}" ><%= link_to (image_tag("#{game.image}", size: "400x300")), game %></figure></td>
+      <td class="post-index-textbox">
+        <h2 style="margin: 0px;"><%= link_to "#{game.name}", game %></h2>
+        <p><%= game.description %></p>
+        <p><%= link_to 'Check it out!', game %></p>
+        <p><%= game.created_at.to_date.strftime("%B %d, %Y") %></p>
       </td>
     </tr>
   <% end %>

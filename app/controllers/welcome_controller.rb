@@ -14,6 +14,7 @@ class WelcomeController < ApplicationController
 
     @searched_posts = []
     @searched_projects = []
+    @searched_games = []
 
     search_array.each do |sa_item|
       Post.all.each do |post|
@@ -26,10 +27,16 @@ class WelcomeController < ApplicationController
           @searched_projects << project
         end
       end
+      Game.all.each do |game|
+        if game.name.downcase.include? sa_item.downcase
+          @searched_games << game
+        end
+      end
     end
 
     @searched_posts
     @searched_projects
+    @searched_games
 
 
   end

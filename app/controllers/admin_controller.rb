@@ -4,6 +4,7 @@ class AdminController < ApplicationController
     @user = User.new
     @posts = Post.all
     @projects = Project.all
+    @games = Game.all
 
   end
 

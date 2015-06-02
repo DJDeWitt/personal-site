@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="color: #3333CC;"><strong><%= @game.name %></strong> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@game.created_at.to_date.strftime("%B %d, %Y")}" %></span></h1>
+<h2><%= @game.description %></h2>
+
+<p style="text-align:center"><%= image_tag "#{@game.image}", width: "100%" %></p>
+<p><%= @game.body.html_safe %></p>
+<br>
+<p><strong>Thank you for checking out my work. If you found it interesting or know someone who would like it, please consider sharing it around. If you would like to learn more about this game, please <a href="/welcome/contact">contact me</a>.</strong></p>

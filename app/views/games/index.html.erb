@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="color: #3333CC;">My Games</h1>
+<h2>Below you'll find a portfolio of my lovingly crafted video games. Using <a href="https://www.yoyogames.com/studio">GameMaker: Studio</a>, I make personal games for computers, tablets, and smartphones. If you're interested in my work, <a href="/contact">please reach out!</a></h2>
+
+<!-- Search Bar -->
+<% form_tag games_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<!-- Actual Projects -->
+<table>
+  <% @games.each do |game| %>
+    <tr>
+      <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{game_path()}" ><%= link_to (image_tag("#{game.image}", size: "400x300")), game %></figure></td>
+      <td class="post-index-textbox">
+        <h2 style="margin: 0px;"><%= link_to "#{game.name}", game %></h2>
+        <p><%= game.description %></p>
+        <p><%= link_to 'Check it out!', game %></p>
+        <p><%= game.created_at.to_date.strftime("%B %d, %Y") %></p>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= will_paginate @games %>
+
+<br>

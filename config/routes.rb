@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :games
+
   #devise_for :users#, :skip => [:registrations]
   # as :user do
   #     get "/admin/login" => "devise/sessions#new", :as => :new_user_session
