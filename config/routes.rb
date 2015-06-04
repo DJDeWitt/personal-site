@@ -45,6 +45,9 @@ Rails.application.routes.draw do
   get '/manifesto' => 'welcome#manifesto'
   get '/search' => 'welcome#search'
 
+  # Jellyvision Cover Letter
+  get '/jellyvision' => 'welcome#jellyvision'
+
   get '/admin' => 'admin#index'
 
   # Example of regular route:

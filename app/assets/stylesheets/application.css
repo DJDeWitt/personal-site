@@ -537,3 +537,36 @@ margin: 10px;
     background-color: #FFF;
     color: #000;
 }
+
+/* Jellyvision Code */
+
+.jelly-box {
+  border-radius: 25px;
+  background: #3333CC;
+  padding: 8px;
+  box-shadow: 0px 5px 0px #26269E;
+  color: white;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.jelly-answer {
+  background: gray;
+  box-shadow: 0px 5px 0px #333;
+  width: 30%;
+  display: inline-block;
+  font-size: 1.25em;
+  cursor: pointer; cursor: hand;
+}
+
+.jelly-answer:hover {
+  background: orange;
+  box-shadow: 0px 5px 0px #946000;
+}
+
+.jelly-image {
+  border: 2px solid white;
+  border-radius: 2px;
+}

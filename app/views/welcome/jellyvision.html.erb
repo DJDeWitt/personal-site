@@ -1,0 +1,25 @@
+<body ng-app="myApp">
+    <div class="main" ng-controller="MainController">
+      <h1 class="jelly-box" style="margin: 32px 0px; background: orange; box-shadow: 0px 5px 0px #946000;">DJ's Jellyvision Cover Letter!</h1>
+      <div style="text-align: center;" ng-repeat="textSection in textSections | filter:{textPhase: phase}:true">
+        <div class="jelly-box">
+          <img ng-src="{{ textSection.image }}" class="jelly-image" alt="gif" width="50%">
+          <br>
+          {{textSection.text}}
+          <span ng-if="(reasonCountTold == 0 && textSection.textPhase == 13)">I think I should be your next junior developer for three simple reasons:</span>
+          <span ng-if="(reasonCountTold == 1 && textSection.textPhase == 13)">I’ve got two more reasons that I think would make me a great Jellyvision junior developer:</span>
+          <span ng-if="(reasonCountTold == 2 && textSection.textPhase == 13)">I’ve got one last reason that I think makes me a perfect fit as Jellyvision's next Junior Full Stack Developer:</span>
+          <span ng-if="(reasonCountTold == 3 && textSection.textPhase == 13)">I’ve got a few more reasons up my sleeve, but I’ll save those until you meet me in person! To tide you over, please feel free to check out my resume, my LinkedIn, and the rest of my website! Thank you so much for taking the time to read, I hope you enjoyed the experience!</span>
+        </div>
+        <span style="display: inline-block; width: 100%;" ng-repeat="response in textSection.responses">
+          <span ng-if="checkReasonCompletion(response.phaseTo)">
+            <span class="jelly-box jelly-answer" ng-click="changePhase(response.phaseTo)">{{response.responseText}}</span>
+          </span>
+        </span>
+        <span style="display: inline-block; width: 100%;" ng-if="(reasonCountTold == 3 && textSection.textPhase == 13)">
+          <span class="jelly-box jelly-answer" ng-click="changePhase(28)">Sounds great! See you soon Future DJ!</span>
+        </span>
+      </div>
+      <h1 class="jelly-box jelly-answer" style="margin: 32px 0px; width: 100%;" ng-click="restartLetter()">Interactive cover letter built using Angular.JS. Website built using Ruby on Rails. To start over, click here!</h1>
+    </div>
+  </body>

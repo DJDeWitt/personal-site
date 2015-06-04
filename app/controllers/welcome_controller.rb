@@ -33,12 +33,15 @@ class WelcomeController < ApplicationController
         end
       end
     end
-
     @searched_posts
     @searched_projects
     @searched_games
+  end
 
-
+  def jellyvision
+    @user = User.new
+    @posts = Post.search(params[:search], params[:page]).take(3)
+    @projects = Project.search(params[:search], params[:page]).take(3)
   end
 
 end
