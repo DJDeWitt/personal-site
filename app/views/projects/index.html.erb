@@ -1,33 +1,19 @@
 <p id="notice"><%= notice %></p>
-
-<h1 style="color: #3333CC;">My Projects</h1>
-<h2>Below you'll find a portfolio of my web development projects. I'm interested in building tools that are interesting, entertaining, edifying, and genuinely helpful. If you have an idea for a project or something here strikes your fancy, <a href="/contact">please reach out!</a></h2>
-
-<!-- Search Bar -->
-<% form_tag projects_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-<% end %>
-
-<!-- Actual Projects -->
-<table>
-  <% @projects.each do |project| %>
-    <tr>
-      <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", size: "400x300")), project %></figure></td>
-      <td class="post-index-textbox">
-        <h2 style="margin: 0px;"><%= link_to "#{project.name}", project %></h2>
-        <p><%= project.description %></p>
-        <p><%= link_to 'Check it out!', project %></p>
-        <p><%= project.created_at.to_date.strftime("%B %d, %Y") %></p>
-      </td>
-    </tr>
-  <% end %>
-</table>
-
+<div class="row clearfix">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h1 style="color: #3333CC;"><strong style="font-family: 'Roboto Slab', serif;">My Projects</strong></h1>
+      <h2>Below you'll find a portfolio of my web development projects. I'm interested in building tools that are interesting, entertaining, edifying, and genuinely helpful. If you have an idea for a project or something here strikes your fancy, <a href="/contact">please reach out!</a></h2>
+    </div>
+  </div>
+</div>
+<div class="row clearfix text-center">
+  <div class="container">
+    <% @projects.each do |project| %>
+      <%= render 'projects/card_project', :post => project %>
+    <% end %>
+  </div>
+</div>
 <br>
-
 <%= will_paginate @projects %>
-
 <br>

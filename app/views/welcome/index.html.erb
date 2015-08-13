@@ -1,100 +1,79 @@
-
-<div>
-  <h1 style="color: #3333CC;">Hi there, I'm DJ.</h1>
-  <h2>I'm a <a href="/projects">web developer</a> and <a href="/posts">writer</a> looking for a company that is passionate about creative, self-motivated individuals.
-  <br><br>
-  I want to do great work while making the tech industry a more diverse, empathetic place.</h2>
+<div class="row clearfix">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h1 style="color: #3333CC;"><strong style="font-family: 'Roboto Slab', serif;">Hi there, I'm DJ.</strong></h1>
+      <h2>I'm a <a href="/projects">web developer</a>, <a href="/posts">writer</a>, and <a href="/games">game developer</a>.
+      <br><br>
+      My mission is to use my creativity, privilege, liberal education, and technical skills to make lasting works that entertain, edify, and improve the quality of life for those less fortunate than me.</h2>
+    </div>
+  </div>
 </div>
 
-<div class="ui grid">
-  <div class="computer only row"><div class="column">
-  <div style="vertical-align: top; display: inline-block; width: 48%;">
-
-    <h1 style="color: #3333CC;">Latest Posts</h1>
-    <table>
-      <% @posts.each do |post| %>
-
-        <tr><td class="post-index-textbox">
-          <figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", width: "100%")), post %></figure></td>
-        </tr>
-
-        <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
-          <strong style="font-size: 2em;"><%= link_to post.title, post %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></span>
-          <div style="font-size: 1.25em;"><%= post.dek %></div></td>
-        </tr>
-
-      <% end %>
-    </table>
-    <table><tr>
-      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
-      <td><h3>For more posts, please visit <%= link_to "the blog.", '/posts' %></h3></td>
-    </tr></table>
+<!-- Posts -->
+<div class="row clearfix">
+  <div class="container" style="border-bottom: 1px solid #3333CC;">
+    <h1 style="color: #3333CC; font-weight: bold;">Posts</h1>
   </div>
-
-  <div style="vertical-align: top; display: inline-block;  width: 48%;">
-
-    <h1 style="color: #3333CC;">Latest Projects</h1>
-    <table>
-      <% @projects.each do |project| %>
-
-      <tr><td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", width: "100%")), project %></figure></td></tr>
-
-      <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
-        <strong style="font-size: 2em;"><%= link_to project.name, project %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
-        <div style="font-size: 1.25em;"><%= project.description %></div></td></tr>
-
-      <% end %>
-    </table>
-    <table><tr>
-      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
-      <td><h3>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></h3></td>
-    </tr></table>
-  </div>
-
-  </div></div>
-  <!-- Mobile Landing Page -->
-  <div class="mobile only row"><div class="column">
-
-    <h1 style="color: #3333CC;">Latest Posts</h1>
-    <table>
-      <% @posts.each do |post| %>
-
-        <tr><td class="post-index-textbox">
-          <figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", width: "100%")), post %></figure></td>
-        </tr>
-
-        <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
-          <strong style="font-size: 2em;"><%= link_to post.title, post %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></span>
-          <div style="font-size: 1.25em;"><%= post.dek %></div></td>
-        </tr>
-
-      <% end %>
-    </table>
-    <table><tr>
-      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
-      <td><h3>For more posts, please visit <%= link_to "the blog.", '/posts' %></h3></td>
-    </tr></table>
-    <h1 style="color: #3333CC;">Latest Projects</h1>
-    <table>
-      <% @projects.each do |project| %>
-
-      <tr><td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{project_path()}" ><%= link_to (image_tag("#{project.image}", width: "100%")), project %></figure></td></tr>
-
-      <tr><td class="post-index-textbox" style="background-color: GhostWhite;">
-        <strong style="font-size: 2em;"><%= link_to project.name, project %></strong> <span style="font-size: 1em; font-style: italic; font-weight: bold;"><%= project.created_at.to_date.strftime("%B %d, %Y") %></span>
-        <div style="font-size: 1.25em;"><%= project.description %></div></td></tr>
-
-      <% end %>
-    </table>
-    <table><tr>
-      <td><i class="arrow circle right icon" style="font-size: 32px; color: #3333CC; opacity: 1;vertical-align: middle;"></i></td>
-      <td><h3>To see all my projects, please visit <%= link_to "my portfolio.", '/projects' %></h3></td>
-    </tr></table>
-
-  </div></div>
-
 </div>
-
-<div>
-  <h2>I am currently looking for full-time junior developer opportunities. If you are interested in bringing on a creative voice that cares deeply about improving tech and tech culture, <%= link_to "let's talk.", '/contact' %></h2>
+<div class="row clearfix text-center" style="margin-bottom: 16px;">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <%= render 'posts/card_post', :post => post %>
+    <% end %>
+  </div>
+</div>
+<div class="row clearfix text-center">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h3><%= link_to "For more posts, please visit the blog.", '/posts' %></h3>
+    </div>
+  </div>
+</div>
+<!-- Projects -->
+<div class="row clearfix">
+  <div class="container" style="border-bottom: 1px solid #3333CC;">
+    <h1 style="color: #3333CC; font-weight: bold;">Projects</h1>
+  </div>
+</div>
+<div class="row clearfix text-center"  style="margin-bottom: 16px;">
+  <div class="container">
+    <% @projects.each do |project| %>
+      <%= render 'projects/card_project', :post => project %>
+    <% end %>
+  </div>
+</div>
+<div class="row clearfix text-center">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h3><%= link_to "To see all my projects, please visit my portfolio.", '/projects' %></h3>
+    </div>
+  </div>
+</div>
+<!-- Games -->
+<div class="row clearfix">
+  <div class="container" style="border-bottom: 1px solid #3333CC;">
+    <h1 style="color: #3333CC; font-weight: bold;">Games</h1>
+  </div>
+</div>
+<div class="row clearfix text-center"  style="margin-bottom: 16px;">
+  <div class="container">
+    <% @games.each do |game| %>
+      <%= render 'games/card_game', :post => game %>
+    <% end %>
+  </div>
+</div>
+<div class="row clearfix text-center">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h3><%= link_to "To see all my games, please visit my games portfolio.", '/games' %></h3>
+    </div>
+  </div>
+</div>
+<!-- Closing -->
+<div class="row clearfix text-center">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+  <h2>If you would like to discuss my work or have an idea for a project I can help out on, <%= link_to "let's talk.", '/contact' %></h2>
+    </div>
+  </div>
 </div>

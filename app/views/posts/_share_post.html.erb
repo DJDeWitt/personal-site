@@ -1,0 +1,30 @@
+<div class="row clearfix">
+  <div class="col-md-12 column text-center">
+    <div class="container">
+    <h4 style="font-weight: bold;">Thank you for reading. If you enjoyed the article, please consider sharing it with your friends. If you didn't enjoy the article, please consider sharing it with your enemies. </h4>
+    </div>
+  </div>
+  <div class="col-md-3 column text-center"></div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-twitter">
+      <%= link_to "http://twitter.com/home?status=\"#{@post.title}\" by @djdewitt https://djdewitt.com#{post_path(@post)}", :target => "_blank" do %>
+      <i class="fa fa-twitter-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-facebook">
+      <%= link_to "https://www.facebook.com/sharer/sharer.php?u=", :title => "Share on Facebook", :target => "_blank" do %>
+      <i class="fa fa-facebook-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-email">
+      <%= link_to "mailto:?subject=Check out '#{@post.title}' from DJDeWitt.com&body=I think you would find this article interesting!%0D%0A%0D%0A#{@post.title}: #{@post.dek}%0D%0A%0D%0A%0D%0Alink: https://djdewitt.com#{post_path(@post)}" do %>
+      <i class="fa fa-share-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-3 column text-center"></div>
+</div>

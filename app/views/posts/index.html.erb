@@ -1,33 +1,20 @@
 <p id="notice"><%= notice %></p>
-
-<h1 style="color: #3333CC;">The Blog</h1>
-<h2>I write about technology, media, and culture. I'm interested in exposing ignorance, finding nuance, and better understanding our crafted world. You can find a more detailed look at my mission in the <a href="/manifesto">obligatory manifesto</a>.</h2>
-
-<!-- Search Bar -->
-<% form_tag posts_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-<% end %>
-
-<!-- Actual Posts -->
-<table>
-  <% @posts.each do |post| %>
-    <tr>
-      <td class="post-index-textbox"><figure class="tint" onclick="location.href =" + "#{post_path()}" ><%= link_to (image_tag("#{post.image}", size: "400x300")), post %></figure></td>
-      <td class="post-index-textbox">
-        <h2 style="margin: 0px;"><%= link_to "#{post.title}", post %></h2>
-        <p><%= post.dek %></p>
-        <p><%= link_to 'Read now!', post %></p>
-        <p><%= post.created_at.to_date.strftime("%B %d, %Y") %></p>
-      </td>
-    </tr>
-  <% end %>
-</table>
-
+<div class="row clearfix">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h1 style="color: #3333CC;"><strong style="font-family: 'Roboto Slab', serif;">The Blog</strong></h1>
+      <h2>I write about technology, media, and culture. I'm interested in exposing ignorance, finding nuance, and better understanding our crafted world. You can find a more detailed look at my mission in the <a href="/manifesto">obligatory manifesto</a>.</h2>
+    </div>
+  </div>
+</div>
 <br>
-
+<div class="row clearfix text-center">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <%= render 'posts/card_post', :post => post %>
+    <% end %>
+  </div>
+</div>
+<br>
 <%= will_paginate @posts %>
-
 <br>

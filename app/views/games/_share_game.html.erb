@@ -1,0 +1,30 @@
+<div class="row clearfix">
+  <div class="col-md-12 column text-center">
+    <div class="container">
+    <h4 style="font-weight: bold;">Thank you for checking out my work. If you would like to learn more about the game, please <a href="/contact">contact me</a>.<br><br> If you found it interesting or know someone who would like it, please consider sharing it around.</h4>
+    </div>
+  </div>
+  <div class="col-md-3 column text-center"></div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-twitter">
+      <%= link_to "http://twitter.com/home?status=\"#{@post.name}\" by @djdewitt https://djdewitt.com#{project_path(@post)}", :target => "_blank" do %>
+      <i class="fa fa-twitter-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-facebook">
+      <%= link_to "https://www.facebook.com/sharer/sharer.php?u=", :title => "Share on Facebook", :target => "_blank" do %>
+      <i class="fa fa-facebook-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-2 column text-center">
+    <button class="share-button share-email">
+      <%= link_to "mailto:?subject=Check out '#{@post.name}' from DJDeWitt.com&body=I think you would find this game interesting!%0D%0A%0D%0A#{@post.name}: #{@post.description}%0D%0A%0D%0A%0D%0Alink: https://djdewitt.com#{project_path(@post)}" do %>
+      <i class="fa fa-share-square" style="font-size: 5em;"></i>
+      <% end %>
+    </button>
+  </div>
+  <div class="col-md-3 column text-center"></div>
+</div>

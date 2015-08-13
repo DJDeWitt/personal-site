@@ -1,9 +1,29 @@
 <p id="notice"><%= notice %></p>
-
-<h1 style="color: #3333CC;"><strong><%= @game.name %></strong> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@game.created_at.to_date.strftime("%B %d, %Y")}" %></span></h1>
-<h2><%= @game.description %></h2>
-
-<p style="text-align:center"><%= image_tag "#{@game.image}", width: "100%" %></p>
-<p><%= @game.body.html_safe %></p>
-<br>
-<p><strong>Thank you for checking out my work. If you found it interesting or know someone who would like it, please consider sharing it around. If you would like to learn more about this game, please <a href="/welcome/contact">contact me</a>.</strong></p>
+<div class="row clearfix">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h1 style="color: #3333CC;"><strong style="font-family: 'Roboto Slab', serif;"><%= @game.name %></strong></h1>
+      <h2><%= @game.description %></h2>
+    </div>
+  </div>
+  <div class="col-md-12 column" style="background-color: white;">
+    <div class="container">
+      <p style="text-align:center"><%= image_tag "#{@game.image}", width: "100%" %></p>
+      <div style="font-size: 1.5em;"><%= @game.body.html_safe %></div>
+    </div>
+  </div>
+  <div style="background-color: #eee;">
+    <div class="container">
+      <%= render 'games/share_game', :@post => @game %>
+      <br>
+      <h4 style="text-align: center; font-weight: bold;">Please check out some of my other games below:</h4>
+    </div>
+  </div>
+  <div class="row clearfix text-center" style="background-color: white;">
+    <div class="container">
+      <% @random_games.each do |post| %>
+        <%= render 'games/card_game', :post => post %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,6 @@ class AdminController < ApplicationController
     @posts = Post.all
     @projects = Project.all
     @games = Game.all
-
   end
 
 end

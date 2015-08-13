@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
     @user = User.new
     @posts = Post.search(params[:search], params[:page]).take(3)
     @projects = Project.search(params[:search], params[:page]).take(3)
+    @games = Game.search(params[:search], params[:page]).take(3)
   end
 
   def search
@@ -11,6 +12,8 @@ class WelcomeController < ApplicationController
     search_query = params["q"] # User entered search string
     p "search array:"
     p search_array = search_query.split(" ") # Array containing individual terms of the user entered search string
+
+    @search_query = search_query # Display what was searched
 
     @searched_posts = []
     @searched_projects = []

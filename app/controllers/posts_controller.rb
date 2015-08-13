@@ -13,17 +13,22 @@ class PostsController < ApplicationController
 
     redirect_to root_url if @post.published == false
 
+    # Get random posts
+    @random_posts = []
     post_array = Post.all
-    post_number = rand(Post.all.size)
-    @random_post = post_array[post_number]
+    @random_posts = post_array - [@post]
 
-    # this was screwed up without the if, maybe now fixed
-    if (Post.all.size > 1)
-      until @random_post != @post
-        post_number = rand(Post.all.size)
-        @random_post = post_array[post_number]
-      end
-    end
+    # post_number = rand(Post.all.size)
+    # random_post = post_array[post_number]
+    # while @random_posts < 3
+    #   if (Post.all.size > 1)
+    #     until random_post != @post
+    #       post_number = rand(Post.all.size)
+    #       random_post = post_array[post_number]
+    #       @random_posts << random_post
+    #     end
+    #   end
+    # end
 
     if request.path != post_path(@post)
       redirect_to @post, status: :moved_permanently

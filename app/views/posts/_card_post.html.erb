@@ -1,0 +1,8 @@
+<%= content_tag :div, class: "post-card", :onclick => "location.href=\'#{post_path(post)}\'" do %>
+  <div style="text-align: center; display: inline-block;"><%= image_tag post.image, width: "100%" %></div>
+  <h3 style="margin: 0px 4px; text-align: center; font-weight: bold; font-family: 'Roboto Slab', serif;"><%= post.title %></h2>
+  <br>
+  <p style="margin: 0px 4px; text-align: center;"><%= post.dek %></p>
+  <br>
+  <p style="font-size: 1em; font-style: italic; font-weight: bold;"><%= post.created_at.to_date.strftime("%B %d, %Y") %></p>
+<% end %>

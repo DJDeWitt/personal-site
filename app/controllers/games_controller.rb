@@ -10,6 +10,11 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+    # Get random games
+    @random_games = []
+    game_array = Game.all
+    @random_games = game_array - [@game]
+
     if request.path != game_path(@game)
       redirect_to @game, status: :moved_permanently
     end

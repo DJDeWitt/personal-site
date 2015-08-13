@@ -11,6 +11,11 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    # Get random projects
+    @random_projects = []
+    project_array = Project.all
+    @random_projects = project_array - [@project]
+
     if request.path != project_path(@project)
       redirect_to @project, status: :moved_permanently
     end

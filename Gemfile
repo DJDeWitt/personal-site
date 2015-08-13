@@ -47,6 +47,9 @@ gem "less-rails"
 # User Authentification
 gem 'devise'
 
+# Social Sharing Buttons
+# gem 'social-share-button'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -63,6 +66,6 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring', '~> 1.3.3'
+  gem 'spring', '~> 1.3.6'
 end
 

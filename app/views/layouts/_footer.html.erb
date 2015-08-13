@@ -1,8 +1,28 @@
-<div class='footer' style="background-color: #3333CC; color: white; border-top: 1px solid black;">
-
-<span style="width: 100%; display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;">This site copyright DJ DeWitt, 2015</span>
-
+<div class="row clearfix" style="margin-top: 10px; font-size: 1.5em;">
+    <div class="col-md-2 column"></div>
+    <div class="col-md-2 column" style="color: #FFFFFF;">
+      <p><strong style="font-family: 'Roboto Slab', serif;">DJ DeWitt</strong> is a Chicago-based writer and programmer. He likes coffee, craft beer, and talking in the third person.</p>
+    </div>
+    <div class="col-md-2 column" style="color: #FFFFFF;">
+      <p style="font-family: 'Roboto Slab', serif;">My Work</p>
+      <p><%= link_to "My Writing", '/posts', class: "footer-link" %></p>
+      <p><%= link_to "My Projects", '/projects', class: "footer-link" %></p>
+      <p><%= link_to "My Games", '/games', class: "footer-link" %></p>
+    </div>
+    <div class="col-md-2 column" style="color: #FFFFFF;">
+      <p style="font-family: 'Roboto Slab', serif;">Reach Out</p>
+      <p><%= link_to "Contact", '/contact', class: "footer-link" %></p>
+      <p><%= link_to "Email", 'mailto:djdewitt@gmail.com', class: "footer-link" %></p>
+      <p><%= link_to "Twitter", 'https://twitter.com/djdewitt', class: "footer-link" %></p>
+      <p><%= link_to "LinkedIn", 'https://linkedin.com/in/djdewitt', class: "footer-link" %></p>
+    </div>
+    <div class="col-md-2 column" style="color: #FFFFFF;">
+      <p><%= image_tag "DJ_profile.jpg", :width => "100%", :crop => :fill %></p>
+    </div>
+    <div class="col-md-2 column"></div>
+  </div>
+<div class="row clearfix text-center" style="margin-top: 10px; font-size: 1.5em;">
+  <div class="col-md-12 column" style="color: #FFFFFF;">
+    <p style="font-family: 'Roboto Slab', serif;">© 2015 DJ DeWitt, All Rights Reserved</p>
+  </div>
 </div>

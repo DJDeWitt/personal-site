@@ -1,10 +1,31 @@
 <p id="notice"><%= notice %></p>
+<div class="row clearfix">
+  <div class="col-md-12 column" style="background-color: #eee;">
+    <div class="container">
+      <h1 style="color: #3333CC;"><strong style="font-family: 'Roboto Slab', serif;"><%= @post.title %></strong></h1>
+      <h2><%= @post.dek %></h2>
+      <p><span style="font-weight: bold; color: black;">Published <%= "#{@post.created_at.to_date.strftime("%B %d, %Y")}" %></span></p>
+    </div>
+  </div>
+  <div class="col-md-12 column" style="background-color: white;">
+    <div class="container">
+      <p style="text-align:center"><%= image_tag "#{@post.image}", width: "100%" %></p>
+      <div style="font-size: 1.5em;"><%= @post.body.html_safe %></div>
+    </div>
+  </div>
+  <div style="background-color: #eee;">
+    <div class="container">
+      <%= render 'posts/share_post', :@post => @post %>
+      <br>
+      <h4 style="text-align: center; font-weight: bold;">If you want something else to read, try one of these:</h4>
+    </div>
+  </div>
+  <div class="row clearfix text-center" style="background-color: white;">
+    <div class="container">
+      <% @random_posts.each do |post| %>
+        <%= render 'posts/card_post', :post => post %>
+      <% end %>
+    </div>
+  </div>
 
-
-<h1 style="color: #3333CC;"><strong><%= @post.title %></strong> <span style="font-weight: bold; font-size: .5em; color: black;"><%= "#{@post.created_at.to_date.strftime("%B %d, %Y")}" %></span></h1>
-<h2><%= @post.dek %></h2>
-
-<p style="text-align:center"><%= image_tag "#{@post.image}", width: "100%" %></p>
-<p><%= @post.body.html_safe %></p>
-<br>
-<p><strong>Thank you for reading. If you enjoyed the article, please consider sharing it with your friends. If you didn't enjoy the article, please consider sharing it with your enemies. If you have thoughts or feedback, please <a href="/welcome/contact">contact me</a>. If you want something else to read, <%= link_to "click here", post_path(@random_post) %>.</strong></p>
+</div>
